@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Boda</title>
+    <meta name="description" content="App web para nuestra boda con toda la información importante">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+    <!-- Meta tags para iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Nuestra Boda">
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+</head>
+<body>
+    <header>
+        <h1>Nuestra Boda</h1>
+        <p>Ana & Nacho</p>
+        <!-- Cambia los nombres por los de la pareja -->
+    </header>
+
+    <main>
+        <section id="inicio">
+            <div class="container">
+                <h2>¡Nos casamos!</h2>
+                <p class="fecha">21 de Marzo, 2026</p>
+                <!-- Cambia la fecha por la de tu boda -->
+                <p>Te invitamos a compartir este día tan especial con nosotros</p>
+                <button id="rsvp-btn">Confirmar asistencia</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Boda A&N</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script>
+        // Registrar el Service Worker para funcionalidad offline
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(reg => console.log('Service Worker registrado'))
+                    .catch(err => console.log('Error al registrar Service Worker', err));
+            });
+        }
+    </script>
+</body>
+</html>

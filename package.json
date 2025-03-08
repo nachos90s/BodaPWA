@@ -1,0 +1,20 @@
+{
+  "name": "bodapwa",
+  "version": "1.0.0",
+  "description": "PWA  para boda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nachos90s/BodaPWA.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nachos90s/BodaPWA/issues"
+  },
+  "homepage": "https://github.com/nachos90s/BodaPWA#readme"
+}
